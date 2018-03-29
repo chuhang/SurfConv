@@ -1,17 +1,17 @@
 # SurfConv: A simple yet effective way to use RGBD data
 
-##Paper:
+## Paper:
 
 **SurfConv: Bridging 3D and 2D Convolution for RGBD Images**  
 Hang Chu, Wei-Chiu Ma, Kaustav Kundu, Raquel Urtasun, Sanja Fidler  
 *CVPR 2018*
 
-##Requirements:
+## Requirements:
 pytorch  
 pypng
 
-##Usage:
-###1. Discretize depth using D4
+## Usage:
+### 1. Discretize depth using D4
 
 ```
 cd ./D4
@@ -20,7 +20,7 @@ python resample_input.py
 
 This will compute depth level boundaries of SurfConv, and generate resampled & masked images/labels for training.
 
-###2. Train on KITTI
+### 2. Train on KITTI
 
 ```
 cd ./train
