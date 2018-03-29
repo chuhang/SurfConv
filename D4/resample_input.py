@@ -66,7 +66,7 @@ def resample_images_KITTI(dataset_path, num_of_levels, gamma):
                                   depth_levels[0, 2] *
                                   depth_levels[k, 2])
                     height = round(width / img.shape[1] * img.shape[0])
-                    img_k = m.imresize(img, (int(height), int(width)))
+                    img_k = m.imresize(img, (int(height), int(width)), interp = 'bicubic')
                     m.imsave(os.path.join(imgpath_out,
                                           f[:-4] + 'p' + str(k + 1) + '.png'), img_k)
     print('Resampling & masking labels...')
