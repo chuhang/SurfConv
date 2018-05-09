@@ -4,11 +4,14 @@
 
 **SurfConv: Bridging 3D and 2D Convolution for RGBD Images**  
 Hang Chu, Wei-Chiu Ma, Kaustav Kundu, Raquel Urtasun, Sanja Fidler  
-*CVPR 2018*
+*CVPR 2018* \[[pdf](http://chuhang.github.io/files/publications/CVPR_18_1.pdf)\]
+
+## How it works:
+![SurfConv](./img/intro.png "SurfConv")
 
 ## Requirements:
-pytorch  
-pypng
+- pytorch-0.2.0  
+- pypng
 
 ## Usage:
 ### 1. Discretize depth using D4
